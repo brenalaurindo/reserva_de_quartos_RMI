@@ -11,7 +11,7 @@ public class HotelClient {
         try {
             String command = args[0];
             String serverAddress = args[1];
-            RoomManager roomManager = (RoomManager) Naming.lookup("//" + serverAddress + "/RoomManager");
+            RoomManager roomManager = (RoomManager) Naming.lookup("//" + serverAddress + ":1100/RoomManager");
 
             switch (command) {
                 case "list":
